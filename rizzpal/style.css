@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    background-color: #000000;
+    color: #ffffff;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    width: 100%;
+    max-width: 500px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 100vh;
+}
+
+.main-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 40px 0;
+}
+
+/* Logo */
+.logo h1 {
+    font-size: 64px;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 60px;
+    letter-spacing: -1px;
+}
+
+.heart {
+    font-size: 64px;
+}
+
+/* Store Buttons */
+.store-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+}
+
+.store-btn {
+    display: block;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.store-btn:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+}
+
+.store-btn img {
+    height: 60px;
+    width: auto;
+}
+
+/* Footer */
+.footer {
+    width: 100%;
+    padding: 40px 0 20px;
+    text-align: center;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 25px;
+}
+
+.footer-links a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    transition: opacity 0.2s ease;
+}
+
+.footer-links a:hover {
+    opacity: 0.7;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-bottom: 20px;
+}
+
+.social-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.social-icon:hover {
+    transform: scale(1.1);
+    opacity: 0.7;
+}
+
+.social-icon svg {
+    width: 24px;
+    height: 24px;
+}
+
+.ownership {
+    color: #666666;
+    font-size: 13px;
+    margin-top: 15px;
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+    .logo h1 {
+        font-size: 48px;
+    }
+    
+    .heart {
+        font-size: 48px;
+    }
+    
+    .store-btn img {
+        height: 50px;
+    }
+    
+    .footer-links {
+        gap: 20px;
+    }
+    
+    .footer-links a {
+        font-size: 14px;
+    }
+}
