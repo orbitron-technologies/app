@@ -12,11 +12,10 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// Rizzpal button click handler (currently does nothing, ready for future link)
+// Rizzpal button click handler
 document.querySelectorAll('.rizzpal-btn').forEach(button => {
     button.addEventListener('click', function() {
-        // Future: window.location.href = '/rizzpal';
-        console.log('Rizzpal button clicked - link will be added later');
+        window.location.href = '/rizzpal';
     });
 });
 
@@ -51,7 +50,7 @@ const observer = new IntersectionObserver((entries) => {
     });
 }, observerOptions);
 
-// Observe service cards
+// Observe service cards (if they exist)
 document.querySelectorAll('.service-card').forEach(card => {
     card.style.opacity = '0';
     card.style.transform = 'translateY(30px)';
@@ -59,7 +58,7 @@ document.querySelectorAll('.service-card').forEach(card => {
     observer.observe(card);
 });
 
-// Add hover effect to service cards
+// Add hover effect to service cards (if they exist)
 document.querySelectorAll('.service-card').forEach(card => {
     card.addEventListener('mouseenter', function() {
         this.style.background = 'linear-gradient(135deg, rgba(102, 126, 234, 0.1) 0%, rgba(118, 75, 162, 0.1) 100%)';
